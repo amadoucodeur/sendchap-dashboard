@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Hpme() {
+export default function Home() {
   return (
     <div>Home</div>
   )
