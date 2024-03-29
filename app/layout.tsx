@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import SideBarNavigation from "@/components/SideBarNavigation";
+import clsx from "clsx";
+import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +18,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="fr">
+      <body className={clsx(inter.className, "grid grid-cols-[312px_1fr] min-h-screen")}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="ligth"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <nav>
+            <SideBarNavigation />
+          </nav>
+          <main>{children}</main>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
