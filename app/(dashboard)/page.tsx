@@ -1,4 +1,6 @@
+import BarsCards from "@/components/BarsCards";
 import DiagrameCard from "@/components/DiagrameCard";
+import MyBarChart from "@/components/MyBarChart";
 import ResumeCard from "@/components/ResumeCard";
 import React from "react";
 
@@ -12,6 +14,7 @@ export default function Home() {
         <DiagrameCard />
         <ResumeCard />
         <ResumeCard />
+        <BarsCards />
       </div>
     </div>
   );
