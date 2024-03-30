@@ -1,4 +1,5 @@
 import DiagrameCard from "@/components/DiagrameCard";
+import ResumeCard from "@/components/ResumeCard";
 import React from "react";
 
 export default function Home() {
@@ -9,6 +10,8 @@ export default function Home() {
         <DiagrameCard />
         <DiagrameCard />
         <DiagrameCard />
+        <ResumeCard />
+        <ResumeCard />
       </div>
     </div>
   );
