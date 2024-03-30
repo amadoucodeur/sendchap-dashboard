@@ -2,6 +2,7 @@ import BarsCards from "@/components/BarsCards";
 import DiagrameCard from "@/components/DiagrameCard";
 import MyBarChart from "@/components/MyBarChart";
 import ResumeCard from "@/components/ResumeCard";
+import TransactionCard from "@/components/TransactionCard";
 import React from "react";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <ResumeCard />
         <ResumeCard />
         <BarsCards />
+        <TransactionCard />
       </div>
     </div>
   );

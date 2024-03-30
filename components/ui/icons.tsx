@@ -115,7 +115,6 @@ export function IconOption() {
   );
 }
 
-
 export function IconFlechUp() {
   return (
     <div>
@@ -129,6 +128,73 @@ export function IconFlechUp() {
         <path
           d="M4 9V1M4 1L7 4M4 1L1 4"
           stroke="#00703C"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+  );
+}
+
+export function IconShare() {
+  return (
+    <div>
+      <svg
+        width="12"
+        height="12"
+        viewBox="0 0 12 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1.28583 10.7142L10.7142 1.28589M10.7142 1.28589V8.35672M10.7142 1.28589H3.64333"
+          stroke="#5FC58E"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+  );
+}
+
+export function IconFlechRight() {
+  return (
+    <div>
+      <svg
+        width="14"
+        height="10"
+        viewBox="0 0 14 10"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1.66669 5H12.3334M12.3334 5L8.33335 9M12.3334 5L8.33335 1"
+          stroke="#092D48"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+  );
+}
+
+
+export function IconPhone() {
+  return (
+    <div>
+      <svg
+        width="10"
+        height="16"
+        viewBox="0 0 10 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3.33331 12.1667H6.66665M9.16665 2.16671V13.8334C9.16665 14.0544 9.07885 14.2663 8.92257 14.4226C8.76629 14.5789 8.55433 14.6667 8.33331 14.6667H1.66665C1.44563 14.6667 1.23367 14.5789 1.07739 14.4226C0.921111 14.2663 0.833313 14.0544 0.833313 13.8334V2.16671C0.833313 1.94569 0.921111 1.73373 1.07739 1.57745C1.23367 1.42117 1.44563 1.33337 1.66665 1.33337H8.33331C8.55433 1.33337 8.76629 1.42117 8.92257 1.57745C9.07885 1.73373 9.16665 1.94569 9.16665 2.16671Z"
+          stroke="#316D91"
           stroke-width="1.5"
           stroke-linecap="round"
           stroke-linejoin="round"
