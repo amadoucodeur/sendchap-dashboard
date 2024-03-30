@@ -4,7 +4,12 @@ import React from "react";
 export default function Home() {
   return (
     <div>
-      <DiagrameCard />
+      <div className="flex gap-6 flex-wrap w-[1128px ">
+        <DiagrameCard />
+        <DiagrameCard />
+        <DiagrameCard />
+        <DiagrameCard />
+      </div>
     </div>
   );
 }
