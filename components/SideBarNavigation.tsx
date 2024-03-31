@@ -7,10 +7,10 @@ import Footer from "./Footer";
 
 export default function SideBarNavigation() {
   return (
-    <div className="flex flex-col gap-6 p-6 border-r-2 border-[#DFEDF4] h-full pt-8 justify-between">
+    <div className="flex flex-col gap-6 p-6 border-r-2 border-[#DFEDF4] h-full pt-8 justify-between fixed top-0 left-0 ">
       <div className="flex flex-col gap-6">
         <Logo />
-        <SearchInput />
+        <SearchInput /> 
         <div className="flex flex-col gap-1">
           <Link
             href={"#"}
@@ -29,6 +29,7 @@ export default function SideBarNavigation() {
           </Link>
         </div>
       </div>
+      
 
       <Footer />
     </div>
