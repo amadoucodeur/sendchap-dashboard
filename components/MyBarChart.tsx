@@ -1,11 +1,5 @@
 "use client";
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  Tooltip,
-} from "recharts";
+import { BarChart, Bar, XAxis, YAxis, Tooltip } from "recharts";
 
 const data = [
   {
@@ -50,7 +44,7 @@ export default function MyBarChart() {
       <XAxis dataKey="name" axisLine={false} />
       <YAxis
         axisLine={false}
-        tickFormatter={(value, name, key) =>
+        tickFormatter={(value: any, index: number) =>
           value == 0 ? `${value}` : `${value / 100000000}M`
         }
       />

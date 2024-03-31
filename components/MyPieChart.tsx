@@ -6,8 +6,7 @@ type Props = {
   COLORS: any;
 };
 
-
-export default function MyPieChart({data, COLORS}: Props) {
+export default function MyPieChart({ data, COLORS }: Props) {
   return (
     <PieChart width={128} height={128}>
       <Pie
@@ -20,7 +19,7 @@ export default function MyPieChart({data, COLORS}: Props) {
         paddingAngle={0}
         dataKey="value"
       >
-        {data.map((entry, index) => (
+        {data.map((entry: any, index: number) => (
           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
         ))}
       </Pie>
