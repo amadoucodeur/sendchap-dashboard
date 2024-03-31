@@ -181,7 +181,6 @@ export function IconFlechRight() {
   );
 }
 
-
 export function IconPhone() {
   return (
     <div>
@@ -197,6 +196,28 @@ export function IconPhone() {
           stroke="#316D91"
           stroke-width="1.5"
           stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+  );
+}
+
+
+export function IconFilter() {
+  return (
+    <div>
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M14.6666 1.33325H1.33331V2.99992L6.33331 7.99992V15.0833L9.66665 12.9999V7.99992L14.6666 2.99992V1.33325Z"
+          stroke="#3B506E"
+          stroke-width="1.5"
           stroke-linejoin="round"
         />
       </svg>

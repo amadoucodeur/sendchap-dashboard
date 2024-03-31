@@ -19,14 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={clsx(inter.className, "grid grid-cols-[312px_1fr] min-h-screen")}>
+      <body className={clsx(inter.className, "grid grid-cols-1 md:grid-cols-[312px_1fr] min-h-screen")}>
         <ThemeProvider
           attribute="class"
           defaultTheme="ligth"
           enableSystem
           disableTransitionOnChange
         >
-          <nav>
+          <nav className="hidden md:block">
             <SideBarNavigation />
           </nav>
           <main>{children}</main>

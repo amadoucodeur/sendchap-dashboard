@@ -1,4 +1,5 @@
 import React from "react";
+import { IconFilter } from "./ui/icons";
 
 export default function Header() {
   return (
@@ -9,7 +10,7 @@ export default function Header() {
         </h2>
         <p className="text-[#3B506E] italic">Bienvenue, Philippe !</p>
       </div>
-      <div className="flex text-[#3B506E] w-full justify-between">
+      <div className="flex text-[#3B506E] w-full justify-between flex-wrap gap-2">
         <div className="flex border-2 border-[#DFEDF4] rounded-lg">
           <button className="py-2 px-4 ">12 mois</button>
           <button className="py-2 px-4 border-x-2 border-[#DFEDF4]">
@@ -23,11 +24,13 @@ export default function Header() {
 
         <div className="flex items-center gap-4">
           <div className="flex border-2 border-[#DFEDF4] rounded-lg py-2 px-4">
-            <p>Jan 6, 2022 – Jan 13, 2022</p>
+            <input type="date" name="" id="" />
+            <input type="date" name="" id="" />
           </div>
-          <div className="flex border-2 border-[#DFEDF4] rounded-lg py-2 px-4">
+          <button className="flex border-2 border-[#DFEDF4] rounded-lg py-2 px-4 gap-2 items-center hover:bg-[#DFEDF4]">
+            <IconFilter />
             <p>Filter</p>
-          </div>
+          </button>
         </div>
       </div>
     </header>
